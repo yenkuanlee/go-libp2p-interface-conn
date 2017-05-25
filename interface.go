@@ -26,6 +26,8 @@ type PeerConn interface {
 	RemotePeer() peer.ID
 	RemotePublicKey() ic.PubKey
 	RemoteMultiaddr() ma.Multiaddr
+
+	RemoteGupkey() string
 }
 
 // Conn is a generic message-based Peer-to-Peer connection.
